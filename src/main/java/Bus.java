@@ -27,8 +27,9 @@ public class Bus {
         return this.passengers.size();
     }
 
-    public void addPassenger(Person person) {
+    public void addPassengerFromStop(BusStop busStop) {
         if(this.passengers.size() < this.capacity) {
+            Person person = busStop.removePersonFromQueue();
             this.passengers.add(person);
         }
     }
@@ -36,4 +37,11 @@ public class Bus {
     public void removePassenger() {
         this.passengers.remove(0);
     }
+
+
+
+
+
+
+
 }

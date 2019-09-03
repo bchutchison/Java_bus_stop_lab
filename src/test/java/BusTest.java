@@ -17,6 +17,8 @@ public class BusTest {
         person = new Person();
         busStop = new BusStop("Constitution Street");
         busStop.addPersonToQueue(person);
+        busStop.addPersonToQueue(person);
+        busStop.addPersonToQueue(person);
     }
 
     @Test

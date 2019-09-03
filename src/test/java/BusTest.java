@@ -24,6 +24,17 @@ public class BusTest {
         assertEquals(20, bus.capacity());
     }
 
+    @Test
+    public void numberOfPassengers() {
+        assertEquals(0, bus.numberOfPassengers());
+    }
+
+    @Test //check that Person can be added to passenger array
+    public void addPersonAsPassenger() {
+        bus.addPassenger(person);
+        assertEquals(1, bus.numberOfPassengers());
+    }
+
 
 
 }

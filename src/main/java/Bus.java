@@ -11,6 +11,7 @@ public class Bus {
     public Bus (String destination, int capacity) {
         this.destination = destination;
         this.capacity = capacity;
+        this.passengers = new ArrayList<Person>();
     }
 
     public String destination() {
@@ -19,5 +20,14 @@ public class Bus {
 
     public int capacity() {
         return this.capacity;
+    }
+
+
+    public int numberOfPassengers() {
+        return this.passengers.size();
+    }
+
+    public void addPassenger(Person person) {
+        this.passengers.add(person);
     }
 }
